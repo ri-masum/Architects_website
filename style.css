@@ -13,7 +13,7 @@
   nav ul li {
       list-style: none;
       margin-right: 40px;
-      
+
 
 
   }
@@ -91,6 +91,51 @@
       width: 100%;
   }
 
+  /* main-section */
+  main {
+      /* max-width: 1440px; */
+      margin: 0 auto;
+  }
+
+  .team-img {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+
+  }
+
+  .feature-container {
+      margin-top: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 70px;
+  }
+
+  .text-color {
+      color: #FF900E;
+      font-weight: 600;
+  }
+
+  .title-color {
+      color: #727272;
+
+  }
+
+  .feature-title {
+      font-size: 45px;
+      font-weight: 500;
+      width: 468px;
+  }
+
+  .feature-desc {
+      width: 537px;
+      color: var(--dark-03, #727272);
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 26px;
+  }
+
   /* responsive making */
   /* mobile device */
   @media screen and (max-width:576px) {
@@ -101,32 +146,61 @@
           text-align: center;
           margin: 0 auto;
       }
-      nav{
 
-        flex-direction: column;
+      nav {
+
+          flex-direction: column;
       }
-      nav h2{
-        margin-bottom: 20px;
+
+      nav h2 {
+          margin-bottom: 20px;
       }
-     
+
+      .team-img {
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+          gap: 10px;
+
+      }
+
+      .feature-container {
+          flex-direction: column-reverse;
+
+      }
+
+      .team-content {
+          width: 100%;
+      }
+      .feature-desc ,  .feature-title {
+        width: 100%;
+       
+    }
+  
+
 
   }
-/* mobile device */
+
+  /* mobile device */
 
   /* tablet device */
   @media screen and (min-width:577px) and (max-width:960px) {
 
-    nav{
-        flex-direction: column;
-        align-items: center;
-    }
-    nav h2{
-        margin-bottom: 20px;
+      nav {
+          flex-direction: column;
+          align-items: center;
       }
-    
+
+      nav h2 {
+          margin-bottom: 20px;
+      }
+
       .banner-content {
-        width: 100%;
-        text-align: center;
-        margin: 0 auto;
+          width: 100%;
+          text-align: center;
+          margin: 0 auto;
+      }
+      .feature-container {
+        flex-direction: column-reverse;
+
     }
   }
