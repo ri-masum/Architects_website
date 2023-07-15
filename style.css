@@ -1,4 +1,80 @@
-body{
-    font-family: 'Open Sans', sans-serif;
+  @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800&display=swap');
 
-}
+  * {
+      font-family: 'Work Sans', sans-serif;
+      margin: 0;
+      padding: 0;
+  }
+
+  header {
+      background: rgba(255, 144, 14, 0.10);
+  }
+
+  nav ul li {
+      list-style: none;
+      margin-right: 40px;
+
+
+  }
+
+  nav>ul {
+      display: flex;
+      align-items: center;
+  }
+
+  nav ul a {
+      text-decoration: none;
+  }
+
+  nav h2 {
+      font-size: 45px;
+      color: #131313;
+      text-align: center;
+      font-weight: 700;
+
+  }
+
+  nav {
+      padding: 60px;
+      display: flex;
+      justify-content: space-between;
+
+
+  }
+  /* banner content */
+
+  .banner {
+      text-align: center;
+  }
+
+  .banner-content{
+    width: 800px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .banner-content  > h1{
+    font-size: 4rem;
+    font-weight: 700;
+  }
+  .small {
+      color: #727272;
+      text-align: center;
+      font-size: 16px;
+      font-weight: 400;
+      margin-top: 30px;
+      
+
+  }
+
+  .btn {
+      width: 180px;
+      height: 64px;
+      border-radius: 8px;
+      border: 0;
+      background: #FF900E;
+      margin-top: 50px;
+  }
+  .banner-img > img{
+    margin-top:50px ;
+    margin-bottom: 45px;
+  }
