@@ -13,6 +13,7 @@
   nav ul li {
       list-style: none;
       margin-right: 40px;
+      
 
 
   }
@@ -24,6 +25,8 @@
 
   nav ul a {
       text-decoration: none;
+      color: var(--dark-02, #424242);
+
   }
 
   nav h2 {
@@ -41,32 +44,39 @@
 
 
   }
+
   /* banner content */
 
   .banner {
       text-align: center;
   }
 
-  .banner-content{
-    width: 800px;
-    text-align: center;
-    margin: 0 auto;
+  .banner-content {
+      width: 800px;
+      text-align: center;
+      margin: 0 auto;
   }
-  .banner-content  > h1{
-    font-size: 4rem;
-    font-weight: 700;
+
+  .banner-content>h1 {
+      font-size: 4rem;
+      font-weight: 700;
   }
+
   .small {
       color: #727272;
       text-align: center;
       font-size: 16px;
       font-weight: 400;
       margin-top: 30px;
-      
+
 
   }
 
   .btn {
+      cursor: pointer;
+      font-size: 20px;
+
+      color: white;
       width: 180px;
       height: 64px;
       border-radius: 8px;
@@ -74,7 +84,49 @@
       background: #FF900E;
       margin-top: 50px;
   }
-  .banner-img > img{
-    margin-top:50px ;
-    margin-bottom: 45px;
+
+  .banner-img>img {
+      margin-top: 50px;
+      margin-bottom: 45px;
+      width: 100%;
+  }
+
+  /* responsive making */
+  /* mobile device */
+  @media screen and (max-width:576px) {
+
+
+      .banner-content {
+          width: 100%;
+          text-align: center;
+          margin: 0 auto;
+      }
+      nav{
+
+        flex-direction: column;
+      }
+      nav h2{
+        margin-bottom: 20px;
+      }
+     
+
+  }
+/* mobile device */
+
+  /* tablet device */
+  @media screen and (min-width:577px) and (max-width:960px) {
+
+    nav{
+        flex-direction: column;
+        align-items: center;
+    }
+    nav h2{
+        margin-bottom: 20px;
+      }
+    
+      .banner-content {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+    }
   }
