@@ -93,7 +93,6 @@
 
   /* main-section */
   main {
-      /* max-width: 1440px; */
       margin: 0 auto;
   }
 
@@ -136,6 +135,88 @@
       line-height: 26px;
   }
 
+  /* feature section 2 */
+  .feature-container2 {
+      display: flex;
+      justify-content: space-around;
+      gap: 50px;
+      margin: 140px 240px;
+
+  }
+
+  .left-1>h2 {
+      width: 468px;
+      color: #131313;
+      font-size: 35px;
+      font-weight: 700;
+      margin-bottom: 10px;
+
+  }
+
+  .left-1>p {
+      width: 586px;
+      color: #727272;
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 18px;
+
+  }
+
+  .feature-box {
+      width: 586px;
+      height: 140px;
+      margin-top: 30px;
+
+      border-radius: 8px;
+      background: #FFF;
+      box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+
+  }
+
+  .box-title {
+      color: #131313;
+      font-size: 20px;
+      font-weight: 600;
+
+  }
+
+  .box-desc {
+      color: var(--dark-03, #727272);
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 20px;
+      margin-top: 10px;
+
+  }
+
+  .btn-large {
+      width: 342px;
+      height: 200px;
+      color: #FFF;
+      text-align: center;
+      margin-top: -60px;
+      margin-right: 40px;
+
+  }
+
+  .right{
+    border: 1px solid tomato;
+  }
+  .right>img {
+      width: 708px;
+      height: 982px;
+  }
+
+  .large-txt {
+      color: #FFF;
+      text-align: center;
+      font-size: 65px;
+      font-weight: 700;
+      line-height: 70px;
+  }
+
+
+
   /* responsive making */
   /* mobile device */
   @media screen and (max-width:576px) {
@@ -171,11 +252,13 @@
       .team-content {
           width: 100%;
       }
-      .feature-desc ,  .feature-title {
-        width: 100%;
-       
-    }
-  
+
+      .feature-desc,
+      .feature-title {
+          width: 100%;
+
+      }
+
 
 
   }
@@ -199,8 +282,9 @@
           text-align: center;
           margin: 0 auto;
       }
-      .feature-container {
-        flex-direction: column-reverse;
 
-    }
+      .feature-container {
+          flex-direction: column-reverse;
+
+      }
   }
